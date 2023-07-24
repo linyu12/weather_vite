@@ -1,0 +1,1 @@
+天氣: {item.weatherElement[21].elementValue} 

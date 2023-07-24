@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import {useCount} from './count.tsx'
-import './App.css'
 
 
 interface ITEM {
@@ -23,7 +22,7 @@ interface ITEM {
 
     function FetchExample() {
         const [data , setData] = useState([]);
-        const { count, upCount } = useCount();
+        const { count} = useCount();
         
         useEffect(() => {
             fetchData();
@@ -100,12 +99,6 @@ interface ITEM {
                 </>
             )
             }
-            <div className="card">
-                <p>count {count}</p>
-                <button onClick={upCount}>
-                    {count % 2 === 0 ? "台北市" : "新竹市"} change place
-                </button>
-            </div>
             </>
         );
     }
